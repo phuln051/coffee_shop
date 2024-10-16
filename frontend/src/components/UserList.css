@@ -1,0 +1,35 @@
+.user-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp các đường viền */
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd; /* Đường viền cho các ô */
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #007bff; /* Màu nền cho tiêu đề */
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Màu nền cho các hàng chẵn */
+}
+
+.user-table tr:hover {
+    background-color: #ddd; /* Màu nền khi hover */
+}

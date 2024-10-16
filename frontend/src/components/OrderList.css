@@ -1,0 +1,79 @@
+.order-list-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333; /* Màu chữ */
+}
+
+.order-list {
+    list-style-type: none; /* Bỏ dấu chấm ở danh sách */
+    padding: 0;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between; /* Căn đều các phần tử */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff; /* Màu nền cho mỗi item */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Hiệu ứng khi hover */
+}
+
+
+
+.details-button,
+.delete-button {
+    background-color: #007bff; /* Màu nền nút */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Hiệu ứng chuyển màu và phóng to */
+}
+
+.details-button:hover {
+    background-color: #0056b3; /* Màu khi hover */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Màu đỏ cho nút xóa */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Màu khi hover */
+    transform: scale(1.05); /* Phóng to khi hover */
+}
+
+.order-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef; /* Màu nền cho chi tiết đơn hàng */
+    border-radius: 5px;
+}
+
+.order-details h3 {
+    margin-bottom: 10px;
+}
+
+.order-details ul {
+    list-style-type: none; /* Bỏ dấu chấm ở danh sách */
+    padding: 0;
+}
+
+.order-details li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* Đường kẻ giữa các chi tiết */
+}
+
+.order-details li:last-child {
+    border-bottom: none; /* Bỏ đường kẻ cho item cuối cùng */
+}

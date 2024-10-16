@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Màu nền của header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng cho header */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333; /* Màu chữ cho logo */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 15px; /* Khoảng cách giữa các mục menu */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #007bff; /* Màu chữ cho liên kết */
+    font-weight: bold;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.cart-button {
+    background-color: #007bff; /* Màu nền cho nút giỏ hàng */
+    color: white; /* Màu chữ cho nút */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px; /* Đưa dropdown xuống dưới nút */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Đảm bảo dropdown nằm trên các phần khác */
+    width: 350px; /* Đặt chiều rộng cho dropdown */
+    padding: 10px;
+}
+
+.cart-dropdown h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.cart-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-dropdown li {
+    display: flex;
+    justify-content: space-between; /* Căn chỉnh giữa tên sản phẩm và giá */
+    align-items: center;
+    padding: 5px 0; /* Khoảng cách giữa các sản phẩm */
+    border-bottom: 1px solid #eee; /* Đường kẻ dưới từng sản phẩm */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Khoảng cách bên trái cho phần điều chỉnh số lượng */
+}
+
+.quantity-control button {
+    background-color: #f0f0f0; /* Màu nền cho nút tăng/giảm */
+    border: 1px solid #ccc; /* Đường viền cho nút */
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-summary {
+    margin-top: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; /* Căn giữa tổng số lượng và tổng giá */
+}
